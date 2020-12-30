@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+ 
+.icon-mail:before { content: '\2709'; } /* '✉' */
+.icon-mobile:before { content: '\e802'; } /* '' */
+.icon-mail-1:before { content: '\e806'; } /* '' */
+.icon-paper-plane:before { content: '\f1d8'; } /* '' */
+.icon-facebook-rect:before { content: '\f301'; } /* '' */
+.icon-twitter-bird:before { content: '\f303'; } /* '' */
+.icon-youtube:before { content: '\f315'; } /* '' */
+.icon-mobile-1:before { content: '📱'; } /* '\1f4f1' */
+.icon-lock:before { content: '🔒'; } /* '\1f512' */
+.icon-phone:before { content: '🚫'; } /* '\1f6ab' */
