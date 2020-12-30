@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/Logo.png">
+    <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+    <link rel="stylesheet" href="css/home.min.css" data-inprogress="">
+</head>
+
+<body>
+
+<!-- Popup -->
+<div class="overlay-login loginPopup animated ">
+    <div class="close"></div>
+    <div class="login__popup ">
+        <div class="content">
+            <img src="img/logo.png">
+            <p>
+                Welcome to
+                <strong>Advertex</strong>
+            </p>
+            <form>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-ic_1"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Username</label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-ic_2"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Password</label>
+                    </div>
+                </div>
+                <a href="#" class="links">Forgot password?</a>
+                <button class="btn up"><span>Login</span></button>
+                <p>Don't have an account yet? <a href="#">Register now</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-password passwordPopup animated ">
+    <div class="close"></div>
+    <div class="password__popup ">
+        <div class="content">
+            <img src="img/logo.png">
+            <p>
+                <strong>Password recovery</strong>
+            </p>
+            <form>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-ic_1"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Username</label>
+                    </div>
+                </div>
+                <button class="btn up"><span>Send reset link</span></button>
+                <p>Don't have an account yet? <a href="#">Register now</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-valid validPopup animated ">
+    <div class="close"></div>
+    <div class="valid__popup ">
+        <div class="content">
+            <img src="img/ic_4.png">
+            <p>
+                Your password has been
+                successfully changed
+            </p>
+            <a href="#" class="btn up"><span>Back to login form</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-registration registrationPopup animated ">
+    <div class="close"></div>
+    <div class="registration__popup ">
+        <div class="content">
+            <img src="img/logo.png">
+            <p>
+                <strong>Advertex</strong>Create an account
+            </p>
+            <form>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-ic_1"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Username</label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-mail"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Email</label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-ic_2"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Password</label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-ic_2"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Retipe password</label>
+                    </div>
+                </div>
+                <div class="input">
+                    <input id="check2" type="checkbox" name="check" value="check2">
+                    <label for="check2" class="lab">Agree with terms and conditions</label>
+                </div>
+                <button class="btn up"><span>Login</span></button>
+                <p>Don't have an account yet? <a href="#">Register now</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-valid2 valid2Popup animated ">
+    <div class="close"></div>
+    <div class="valid2__popup ">
+        <div class="content">
+            <img src="img/ic_10.png">
+            <p>
+                Create an Account
+                <span>
+                    A confirmation email was sent to your inbox
+                </span>
+            </p>
+            <a href="#" class="btn up"><span>Back to login form</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-eror erorPopup animated ">
+    <div class="close"></div>
+    <div class="eror__popup ">
+        <div class="content">
+            <img src="img/pop1.png">
+            <h4>Success message</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.
+            </p>
+            <a href="#" class="btn wt"><span>Close</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-eror2 eror2Popup animated ">
+    <div class="close"></div>
+    <div class="eror2__popup ">
+        <div class="content">
+            <img src="img/pop2.png">
+            <h4>Success message</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.
+            </p>
+            <a href="#" class="btn wt"><span>Close</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-eror3 eror3Popup animated ">
+    <div class="close"></div>
+    <div class="eror3__popup ">
+        <div class="content">
+            <img src="img/pop3.png">
+            <h4>Success message</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.
+            </p>
+            <a href="#" class="btn wt"><span>Close</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-eror4 eror4Popup animated ">
+    <div class="close"></div>
+    <div class="eror4__popup ">
+        <div class="content">
+            <img src="img/pop4.png">
+            <h4>Success message</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.
+            </p>
+            <a href="#" class="btn wt"><span>Close</span></a>
+        </div>
+    </div>
+</div>
+<!-- Основной контент -->
+<div class="wrapper">
+    <div class="bg">
+        <!-- Header -->
+        <header class="header">
+    <div class="container">
+        <a href="index.html" class="logo"><img src="img/Logo.png"><span>Advertex</span></a>
+        <div class="menu_box">
+            <div class="overlay">
+                <nav class="overlayMenu">
+                    <ul role="menu">
+                        <li class="active"><a href="Advertex_Main_4.html">Home</a></li>
+                        <li><a href="Advertex_Blog_Open_1">About us</a></li>
+                        <li><a href="Advertex_Opportunities_5">Opportunities</a></li>
+                        <li><a href="Advertex_Partnership_2.html">Partnership</a></li>
+                        <li class="sub-menu"><a href="javascript:void(0)">Blog<i class="icon-row"></i> </a>
+                        <ul class="sub animated">
+                            <li>
+                                <a href="javascript:void(0)">Ad trading reports</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Platform news </a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><a href="Advertex_Help.html">Help center</a></li>
+                    </ul>
+                    <div class="btn_block">
+                        <a href="#" class="btn in open_login"><span>Sign in</span></a>
+                        <a href="#" class="btn up open_registration"><span>Sign Up</span></a>
+                    </div>
+                </nav>
+            </div>
+            <div class="navBurger" role="navigation" id="navToggle"></div>
+            <div class="btn_block">
+                <a href="#" class="btn in open_login"><span>Sign in</span></a>
+                <a href="#" class="btn up open_registration"><span>Sign Up</span></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <section class="banner">
+            <div class="container">
+                <div class="banner_content">
+                    <div class="text">
+                        <h1>Digital advertising solution </h1>
+                        <p>
+                            <span>powered by artificial intelegence</span>
+                            Advertex brings full efficiency to digital advertising, reduces ad fraud and protects end users privacy.
+                            With Advertex, you save on unnecessary fees. We help advertisers and publishers maximize results and revenues -
+                            with the added value of real-time verifiable reporting.
+                        </p>
+                        <a href="javascript:void(0)" class="btn up"><span>Get started</span></a>
+                    </div>
+                    <div class="img">
+                        <img src="img/art.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <section class="section_1">
+        <div class="container">
+            <div class="top">
+                <div class="box box_1">
+                    <img src="img/icon_1.png">
+                    <p>
+                        New generation
+                        advertising platform
+                    </p>
+                </div>
+                <div class="box box_2">
+                    <img src="img/icon_2.png">
+                    <p>
+                        Matching engine powered
+                        by Artificial Intelligence
+                    </p>
+                </div>
+                <div class="box box_3">
+                    <img src="img/icon_3.png">
+                    <p>
+                        We offer much lower fees
+                        than traditional digital ads
+                    </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="img">
+                    <img src="img/Scheme.png">
+                    <a href="javascript:void(0)" class="btn in"><span>Buy $ADV</span></a>
+                </div>
+                <div class="text">
+                    <h2>About Us</h2>
+                    <p class="quote">Publishers, Advertisers and <span>Real People</span> - nothing less, nothing more</p>
+                    <p>
+                        Advertex -  a digital advertising marketplace that connects advertisers
+                        and publishers  so  they can trade on-line advertising inventory
+                    </p>
+                    <p>
+                        Advertex.io platform makes their revenue from  fees generated by advertisers and publishers.
+                        As open minded and ambitious team we try to expand our platform as much as we can. At the moment
+                        we are looking for additional capital for development and marketing, therefore we offer you be a part
+                        of advertising industry. We designed solution for everyone who wants to profit from advertising industry.
+                        We  are happy to introduce you $ADV shares. Being owner of $ADV makes you rightful stakeholder of
+                        advertex platform.  Anyone can be a part of advertex platform and share our revenue. Since we have
+                        very ambitious goals, we truly believe that $ADV shares  exponential growth will be fueled by
+                        unique artificial intelligence technology integrated in Advertex.io platform.
+                    </p>
+                    <p>
+             <span>
+               $ADV shares of Advertex.io platform been designed to share revenue with it's investors.
+             </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <span class="bg_line"></span>
+    </section>
+    <section class="section_2">
+        <div class="container">
+            <h2>Statistics</h2>
+            <p>Ad market is pretty big as you can see on the NA example</p>
+            <div class="statistics_block">
+                <div class="box box_1">
+                    <p>
+                        <img src="img/icon_4.png">
+                        Advertising spending in
+                        North America in 2019
+                    </p>
+                    <strong>253,6 bn USD</strong>
+                </div>
+                <div class="box box_2">
+                    <p>
+                        <img src="img/icon_5.png">
+                        Growth of internet ad spending in
+                        North America in 2019
+                    </p>
+                    <strong>14,8%</strong>
+                </div>
+                <div class="box box_3">
+                    <p>
+                        <img src="img/icon_6.png">
+                        Digital advertising spending in
+                        North America in 2019
+                    </p>
+                    <strong>126 bn USD</strong>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="img">
+                    <img src="img/Schedule.png">
+
+                </div>
+                <div class="text">
+                    <p>
+                        Digital advertising spending in North America equals to 126 billion in 2019 dollars and  spendings
+                        increasing every year.
+                    </p>
+                    <p>
+                        We as an entrepreneurs can't miss the opportunity to join
+                        ad market. We present to you unique opportunity to join us and and share our revenue by <strong>purchasing $ADV.</strong>
+                    </p>
+                    <p>
+                        $ADV- asset of <span>Advertex.io</span> platform being design to share
+                        revenue with it's investors.
+                    </p>
+                    <a href="javascript:void(0)" class="btn in"><span>Join us</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_3">
+        <div class="container">
+            <h2>Roadmap</h2>
+            <span class="about">We have ambitious plans for the development of the platform</span>
+            <div class="content_block">
+                <div class="box step">
+                    <div class="title_box">
+                        <p>Q3 2019 – Q4 2019</p>
+                        <span>Complate</span>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                Criteria and methodology
+                                development
+                            </li>
+                            <li>
+                                Preparation of development
+                                documents for Web
+                            </li>
+                            <li>
+                                Market research
+                            </li>
+                            <li>
+                                Preparation of documents
+                                for AI implementation
+                                and integration
+                            </li>
+                            <li>
+                                Consultation with Industry
+                                Experts
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="box step_active">
+                    <div class="title_box">
+                        <p>Q1 2020 – Q2 2020</p>
+                        <span>In progress</span>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                Platform design
+                                and development
+                            </li>
+                            <li>
+                                Alpha version of
+                                web platform
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box step_noactive">
+                    <div class="title_box">
+                        <p>Q3 2020</p>
+                        <span>Pending</span>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                Beta testing of
+                                web platform
+                            </li>
+                            <li>
+                                Security audit
+                            </li>
+                            <li>
+                                Mobile App design
+                                and development
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box step_noactive">
+                    <div class="title_box">
+                        <p>Q4 2020</p>
+                        <span>Pending</span>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                Launch platform
+                            </li>
+                            <li>
+                                Facebook Ads
+                            </li>
+                            <li>
+                                Translation
+                            </li>
+                            <li>Launch affiliate program</li>
+                            <li>Youtube Ads</li>
+                            <li>Bloggers integration</li>
+                            <li>Launch social media campaign</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box step_noactive">
+                    <div class="title_box">
+                        <p>Q1 2021</p>
+                        <span>Pending</span>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>API</li>
+                            <li>Launch Mobile App</li>
+                            <li>Instagram Ads</li>
+                            <li>Mobile games Ads</li>
+                            <li>Better fraud protection capabilities</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box step_noactive">
+                    <div class="title_box">
+                        <p>Q2 2021</p>
+                        <span>Pending</span>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>Improvements to the platform</li>
+                            <li>Twitter Ads</li>
+                            <li>Telegram Ads</li>
+                            <li>Native Ads</li>
+                            <li>Blacklisting options</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box step_noactive">
+                    <div class="title_box">
+                        <p>Q3 2021 – Q4 2021</p>
+                        <span>Pending</span>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>Become a standart of Ads industry</li>
+                            <li>Partnership</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left"><p>We accept the most popular currencies</p></div>
+                <div class="right">
+                    <h4>
+                        LET’S GET STARTED
+                        <span>
+                            The registration procedure will take you less than two minutes
+                        </span>
+                    </h4>
+                    <a href="javascript:void(0)" class="btn up"><span>Register now</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_4">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="img/company_1.png">
+                </li>
+                <li>
+                    <img src="img/company_2.png">
+                </li>
+                <li>
+                    <img src="img/company_3.png">
+                </li>
+                <li>
+                    <img src="img/company_4.png">
+                </li>
+                <li>
+                    <img src="img/company_5.png">
+                </li>
+                <li>
+                    <img src="img/company_6.png">
+                </li>
+                <li>
+                    <img src="img/company_7.png">
+                </li>
+                <li>
+                    <img src="img/company_8.png">
+                </li>
+                <li>
+                    <img src="img/company_9.png">
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+       <div class="box">
+           <a href="index.html" class="logo"><img src="img/logo_footer.png"></a>
+           <h4>Advertex</h4>
+           <p>
+               A digital advertising solution powered by
+               artificial intelegence and increased
+               user privacy
+           </p>
+           <ul>
+               <li><a href="mail:AdvertexCompany@gmail.com"><i class="icon-mail"></i> AdvertexCompany@gmail.com</a></li>
+               <li><a href="tel: +1(234)567-8911"><i class="icon-mobile-1"></i> +1(234)567-8911</a></li>
+           </ul>
+       </div>
+       <div class="box">
+         <ul class="menu">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="#anchor" class="down">About us</a></li>
+             <li><a href="opportunities.html">Opportunities</a></li>
+             <li><a href="trading.html">Ad trading reports</a></li>
+             <li><a href="help.html">Platform news</a></li>
+             <li><a href="help.html">Terms and Conditions</a></li>
+         </ul>
+         <div class="social">
+             <a href="#" class="btn_soc"><i class="icon-lock"></i><span>Anti DDos protection</span></a>
+             <ul>
+                 <li><a href="#"><i class="icon-facebook-rect"></i></a></li>
+                 <li><a href="#"><i class="icon-youtube"></i></a></li>
+                 <li><a href="#"><i class="icon-paper-plane"></i></a></li>
+                 <li><a href="#"><i class="icon-twitter-bird"></i></a></li>
+             </ul>
+         </div>
+     </div>
+    </div>
+    <div class="bottom">
+        <div class="container">
+            <p>©2020 - Advertex conpany. All right reserved</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Скрипты -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/home.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

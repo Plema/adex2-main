@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Support_Create_ticket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/Logo.png">
+    <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+    <link rel="stylesheet" href="css/Support_Create_ticket.min.css" data-inprogress="">
+</head>
+
+<body>
+
+<!-- Popup -->
+<include src="assets/templates/popup.html"></include>
+<!-- Основной контент -->
+<div class="wrapper">
+    <!-- Header -->
+    <include src="assets/templates/accountHeader.html"></include>
+    <section class="section_1">
+        <div class="container">
+            <div class="top">
+                <ul class="breadcrumbs">
+                    <li><a href="#">My Account</a> </li>
+                    <li> / </li>
+                    <li class="active"><a href="javascript:void(0)">Support</a> </li>
+                </ul>
+                <p>Last logged 17 Dec 2020 21:33 UTC from : 192.162.13.26</p>
+            </div>
+            <div class="content_bg">
+                <h3>Create ticket</h3>
+                <p>Do you have any questions? Fill out the feedback form</p>
+                <div class="form">
+                    <form>
+                        <div class="input_box">
+                            <select id="test" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": false}'>
+                                <option>Topic</option>
+                                <option>Topic</option>
+                                <option>Topic</option>
+                            </select>
+                        </div>
+                        <div class="input_box">
+                            <input placeholder="Title">
+                        </div>
+                        <div class="input_box">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <div class="btn_block">
+                            <button class="btn wt"><span>cancel</span></button>
+                            <button class="btn up"><span>Create ticket</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<include src="assets/templates/accountFooter.html"></include>
+
+<!-- Скрипты -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/jcf.min.js"></script>
+<script src="js/jcf.select.min.js"></script>
+<script src="js/Support.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

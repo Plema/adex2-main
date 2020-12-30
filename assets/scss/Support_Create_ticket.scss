@@ -1,0 +1,100 @@
+.wrapper{
+  .section_1{
+    background: url("../img/sup_bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding: 0 0 50px 0;
+    min-height: 100vh;
+    .container{
+      .content_bg{
+        padding: 43px 0 80px 0;
+        h3{
+          color: #00cece;
+          font-size: 32px;
+          font-weight: 300;
+          line-height: 50px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        p{
+          color: #899ba4;
+          font-size: 14px;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: 24px;
+          text-align: center;
+        }
+        .form{
+
+          max-width: 570px;
+          margin: 0 auto;
+
+          form{
+            margin: 20px auto 0;
+            .input_box{
+              width: 90%;
+              margin: 0 auto 21px;
+              .jcf-select{
+                color: #adc3ce;
+                font-size: 14px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: left;
+                border: 1px solid #adc3ce;
+                resize: none;
+                padding: 10px 10px 10px 13px;
+                width: 100%;
+                display: block;
+                .jcf-select-opener{
+
+                }
+              }
+              textarea{
+                color: #adc3ce;
+                font-size: 14px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: left;
+                border: 1px solid #adc3ce;
+                resize: none;
+                height: 160px;
+                padding: 15px 10px 10px 13px;
+                width: 100%;
+              }
+              input{
+                color: #adc3ce;
+                font-size: 14px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: left;
+                border: 1px solid #adc3ce;
+                padding: 15px 10px 15px 13px;
+
+                width: 100%;
+              }
+            }
+            .btn_block{
+              display: flex;
+              padding: 0 50px 0 45px;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              margin: 0 auto;
+              .btn{
+                width: 231px;
+                margin: 0 auto 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

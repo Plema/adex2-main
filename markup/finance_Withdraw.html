@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Finance_Withdraw</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/Logo.png">
+    <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+    <link rel="stylesheet" href="css/Finance_Withdraw.min.css" data-inprogress="">
+</head>
+
+<body>
+
+<!-- Popup -->
+<div class="overlay-login loginPopup animated ">
+    <div class="close"></div>
+    <div class="login__popup ">
+        <div class="content">
+            <img src="img/logo.png">
+            <p>
+                Welcome to
+                <strong>Advertex</strong>
+            </p>
+            <form>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-ic_1"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Username</label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-ic_2"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Password</label>
+                    </div>
+                </div>
+                <a href="#" class="links">Forgot password?</a>
+                <button class="btn up"><span>Login</span></button>
+                <p>Don't have an account yet? <a href="#">Register now</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-password passwordPopup animated ">
+    <div class="close"></div>
+    <div class="password__popup ">
+        <div class="content">
+            <img src="img/logo.png">
+            <p>
+                <strong>Password recovery</strong>
+            </p>
+            <form>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-ic_1"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Username</label>
+                    </div>
+                </div>
+                <button class="btn up"><span>Send reset link</span></button>
+                <p>Don't have an account yet? <a href="#">Register now</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-valid validPopup animated ">
+    <div class="close"></div>
+    <div class="valid__popup ">
+        <div class="content">
+            <img src="img/ic_4.png">
+            <p>
+                Your password has been
+                successfully changed
+            </p>
+            <a href="#" class="btn up"><span>Back to login form</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-registration registrationPopup animated ">
+    <div class="close"></div>
+    <div class="registration__popup ">
+        <div class="content">
+            <img src="img/logo.png">
+            <p>
+                <strong>Advertex</strong>Create an account
+            </p>
+            <form>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-ic_1"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Username</label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-mail"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Email</label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-ic_2"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Password</label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <div class="input" tabindex="0">
+                        <i class="icon-ic_2"></i>
+                        <span><input type="text" required="" class="pp-form"></span>
+                        <code class="highlight"></code>
+                        <code class="bar"></code>
+                        <label>Retipe password</label>
+                    </div>
+                </div>
+                <div class="input">
+                    <input id="check2" type="checkbox" name="check" value="check2">
+                    <label for="check2" class="lab">Agree with terms and conditions</label>
+                </div>
+                <button class="btn up"><span>Login</span></button>
+                <p>Don't have an account yet? <a href="#">Register now</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-valid2 valid2Popup animated ">
+    <div class="close"></div>
+    <div class="valid2__popup ">
+        <div class="content">
+            <img src="img/ic_10.png">
+            <p>
+                Create an Account
+                <span>
+                    A confirmation email was sent to your inbox
+                </span>
+            </p>
+            <a href="#" class="btn up"><span>Back to login form</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-eror erorPopup animated ">
+    <div class="close"></div>
+    <div class="eror__popup ">
+        <div class="content">
+            <img src="img/pop1.png">
+            <h4>Success message</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.
+            </p>
+            <a href="#" class="btn wt"><span>Close</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-eror2 eror2Popup animated ">
+    <div class="close"></div>
+    <div class="eror2__popup ">
+        <div class="content">
+            <img src="img/pop2.png">
+            <h4>Success message</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.
+            </p>
+            <a href="#" class="btn wt"><span>Close</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-eror3 eror3Popup animated ">
+    <div class="close"></div>
+    <div class="eror3__popup ">
+        <div class="content">
+            <img src="img/pop3.png">
+            <h4>Success message</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.
+            </p>
+            <a href="#" class="btn wt"><span>Close</span></a>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-eror4 eror4Popup animated ">
+    <div class="close"></div>
+    <div class="eror4__popup ">
+        <div class="content">
+            <img src="img/pop4.png">
+            <h4>Success message</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.
+            </p>
+            <a href="#" class="btn wt"><span>Close</span></a>
+        </div>
+    </div>
+</div>
+<!-- Основной контент -->
+<div class="wrapper">
+    <!-- Header -->
+    <header class="header_2">
+    <div class="container">
+        <a href="index.html" class="logo"><img src="img/Logo.png"><span>Advertex</span></a>
+        <div class="menu_box">
+            <div class="overlay">
+                <nav class="overlayMenu">
+                    <ul role="menu">
+                        <li class="active"><a href="Advertex_Main_4.html">Dashboard</a></li>
+                        <li><a href="Advertex_Blog_Open_1">Finance</a></li>
+                        <li><a href="Advertex_Opportunities_5">Partners</a></li>
+                        <li><a href="Advertex_Partnership_2.html">ADV Shares </a></li>
+                        <li><a href="Advertex_Help.html">News</a></li>
+                        <li class="sub-menu"><a href="javascript:void(0)"><i class="icon-ic_22"></i> Alexander Smith<i class="icon-ic_15"></i> </a>
+                            <ul class="sub animated">
+                                <li>
+                                    <a href="javascript:void(0)">Support</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Account settings</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navBurger" role="navigation" id="navToggle"></div>
+        </div>
+    </div>
+</header>
+
+
+
+    <div class="bg">
+        <section class="section_1">
+            <div class="container">
+                <div class="top">
+                    <ul class="breadcrumbs">
+                        <li><a href="#">My Account</a> </li>
+                        <li> / </li>
+                        <li><a href="#">Finance</a> </li>
+                        <li> / </li>
+                        <li class="active"><a href="javascript:void(0)">Withdraw</a> </li>
+                    </ul>
+                    <p>Last logged 17 Dec 2020 21:33 UTC from : 192.162.13.26</p>
+                </div>
+                <div class="content_bg">
+                   <div class="content_top">
+                       <p>Choose your wallet</p>
+                       <p><span>Withdrawal limit:</span> <strong>$233.00</strong></p>
+                       <div class="currency_box slider_1">
+                           <div>
+                               <div class="box active">
+                              <span>
+                                   <i class="icon-ic_26"></i>
+                              </span>
+                                   <p>
+                                       Bitcoin
+                                   <span>
+                                       0.566014
+                                   </span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div>
+                               <div class="box">
+                              <span>
+                                   <i class="icon-ic_27"></i>
+                              </span>
+                                   <p>
+                                       Ethereum
+                                   <span>
+                                       0.00
+                                   </span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div>
+                               <div class="box">
+                              <span>
+                                   <i class="icon-ic_28"></i>
+                              </span>
+                                   <p>
+                                       Payeer
+                                   <span>
+                                     0.00
+                                   </span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div>
+                               <div class="box">
+                              <span>
+                                   <i class="icon-ic_29"></i>
+                              </span>
+                                   <p>
+                                       Perfect
+                                       <strong>
+                                           Money
+                                       </strong>
+                                   <span>
+                                        500.00
+                                   </span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div>
+                               <div class="box">
+                              <span>
+                                   <i class="icon-ic_30"></i>
+                              </span>
+                                   <p>
+                                       Tether
+                                   <span>
+                                      0.00
+                                   </span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div>
+                               <div class="box">
+                              <span>
+                                   <i class="icon-ic_31"></i>
+                              </span>
+                                   <p>
+                                       Litecoin
+                                   <span>
+                                      0.00
+                                   </span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div>
+                               <div class="box">
+                              <span>
+                                   <i class="icon-ic_32"></i>
+                              </span>
+                                   <p>
+                                       Ripple
+                                   <span>
+                                     0.00
+                                   </span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div>
+                               <div class="box">
+                              <span>
+                                   <i class="icon-ic_33"></i>
+                              </span>
+                                   <p>
+                                       Dai
+                                   <span>
+                                      0.00
+                                   </span>
+                                   </p>
+                               </div>
+                           </div>
+                           <div>
+                               <div class="box">
+                              <span>
+                                   <i class="icon-ic_34"></i>
+                              </span>
+                                   <p>
+                                       Tron
+                                   <span>
+                                      0.00
+                                   </span>
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                    <div class="content_bottom">
+                        <form>
+                            <div class="input_box">
+                                <div class="input address">
+                                    <label>Wallet Address</label>
+                                    <input type="text" placeholder="14xiqKfekcgxG987GVxPQJ9MJQBKjK3gpi">
+                                </div>
+                                <div class="lincks">
+                                    <p>You can specify the wallet address in the settings</p>
+                                    <a href="#">Set your wallet address</a>
+                                </div>
+                            </div>
+                            <div class="input_box">
+                                <div class="input">
+                                    <label>Amount (USD)</label>
+                                    <input type="text" placeholder="100">
+                                </div>
+                                <div class="input">
+                                    <label>Amount (BTC)</label>
+                                    <input type="text" placeholder="0.00969783 BTC">
+                                </div>
+                                <div class="lincks">
+                                    <p>
+                                        Min withdrawal
+                                    <span>
+                                        $10.00
+                                    </span>
+                                    </p>
+                                    <p>
+                                        Withdrawal limit
+                                    <span>
+                                       $233.00
+                                    </span>
+                                    </p>
+                                    <a href="#">Increase limit</a>
+                                </div>
+
+                            </div>
+                            <div class="about">
+                                <p>
+                                    Withdrawal process may take from <span>5 minutes to 24 hours</span>
+                                    depends on the payment method you've selected.
+                                </p>
+                                <button class="btn up"><span>withdraw</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_2">
+            <div class="container">
+                <div class="content_bg">
+                    <p><strong>My withdrawals</strong></p>
+                    <div class="content">
+                        <div class="table_block">
+                            <div class="row title">
+                                <div class="col col1">
+                                    <p>Date
+                                            <span>
+                                                <i class="icon-ic_17"></i>
+                                                 <i class="icon-ic_18"></i>
+                                            </span>
+                                    </p>
+                                </div>
+                                <div class="col col2"><p>Type</p></div>
+                                <div class="col col3"><p>Amount</p></div>
+                                <div class="col col4"><p>Amount in USD</p></div>
+                                <div class="col col5"><p>Status</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col1"><p>Jan 30, 2020 / 6:37</p></div>
+                                <div class="col col2"><p>Withdraw</p></div>
+                                <div class="col col3"><p><i class="icon-ic_26"></i> -0.03453075 BTC</p></div>
+                                <div class="col col4"><p> -$ 99.00</p></div>
+                                <div class="col col5"><p class="Pending">Pending</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col1"><p>Jan 30, 2020 / 6:37</p></div>
+                                <div class="col col2"><p>Withdraw</p></div>
+                                <div class="col col3"><p><i class="icon-ic_27"></i> -0.0017531 ETH</p></div>
+                                <div class="col col4"><p> -$ 33.00</p></div>
+                                <div class="col col5"><p class="Error">Error</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col1"><p>Jan 30, 2020 / 6:37</p></div>
+                                <div class="col col2"><p>Withdraw</p></div>
+                                <div class="col col3"><p><i class="icon-ic_29"></i> -$ 33.00</p></div>
+                                <div class="col col4"><p> -$ 33.00</p></div>
+                                <div class="col col5"><p class="Success">Success</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col1"><p>Jan 30, 2020 / 6:37</p></div>
+                                <div class="col col2"><p>Withdraw</p></div>
+                                <div class="col col3"><p><i class="icon-ic_26"></i>  -0.0017531 BTC</p></div>
+                                <div class="col col4"><p> -$ 33.00</p></div>
+                                <div class="col col5"><p class="Success">Success</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col1"><p>Jan 30, 2020 / 6:37</p></div>
+                                <div class="col col2"><p>Withdraw</p></div>
+                                <div class="col col3"><p><i class="icon-ic_26"></i> -0.03453075 BTC</p></div>
+                                <div class="col col4"><p> -$ 650.00</p></div>
+                                <div class="col col5"><p class="Success">Success</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col1"><p>Jan 30, 2020 / 6:37</p></div>
+                                <div class="col col2"><p>Withdraw</p></div>
+                                <div class="col col3"><p><i class="icon-ic_26"></i> -0.03453075 BTC</p></div>
+                                <div class="col col4"><p>-$ 99.00</p></div>
+                                <div class="col col5"><p class="Success">Success</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col1"><p>Jan 30, 2020 / 6:37</p></div>
+                                <div class="col col2"><p>Withdraw</p></div>
+                                <div class="col col3"><p><i class="icon-ic_27"></i> -0.0017531 ETH</p></div>
+                                <div class="col col4"><p> -$ 33.00</p></div>
+                                <div class="col col5"><p class="Success">Success</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col1"><p>Jan 30, 2020 / 6:37</p></div>
+                                <div class="col col2"><p>Withdraw</p></div>
+                                <div class="col col3"><p><i class="icon-ic_29"></i>  -$ 33.00</p></div>
+                                <div class="col col4"><p> -$ 33.00</p></div>
+                                <div class="col col5"><p class="Success">Success</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col1"><p>Jan 30, 2020 / 6:37</p></div>
+                                <div class="col col2"><p>Withdraw</p></div>
+                                <div class="col col3"><p><i class="icon-ic_26"></i>  -0.0017531 BTC</p></div>
+                                <div class="col col4"><p> -$ 33.00</p></div>
+                                <div class="col col5"><p class="Success">Success</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col1"><p>Jan 30, 2020 / 6:37</p></div>
+                                <div class="col col2"><p>Withdraw</p></div>
+                                <div class="col col3"><p><i class="icon-ic_26"></i>  -0.03453075 BTC</p></div>
+                                <div class="col col4"><p> -$ 150.00</p></div>
+                                <div class="col col5"><p class="Success">Success</p></div>
+                            </div>
+                        </div>
+                        <div class="pagination_block">
+                            <p>Showing 10 out of 54 entries</p>
+                            <ul class="pagination">
+                                <li><a href="javascript:void(0)"><i class="icon-ic_19"></i></a></li>
+                                <li class="active">
+                                    <a href="javascript:void(0)">1</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">2</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">3</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">4</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">...</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">99</a>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="icon-ic_20"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer_2">
+    <div class="container">
+        <div class="box">
+            <a href="index.html" class="logo"><img src="img/logo_footer.png"></a>
+            <h4>Advertex</h4>
+        </div>
+        <div class="box">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#anchor" class="down">About us</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="trading.html">Ad trading reports</a></li>
+                <li><a href="help.html">News</a></li>
+                <li><a href="help.html">Help center</a></li>
+                <li><a href="help.html">Terms and Conditions</a></li>
+            </ul>
+            <div class="leng">
+                <i class="icon-ic_23"></i>
+                <select id="test" data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: false}">
+                    <option>English</option>
+                    <option>Русский</option>
+                    <option>Deutsch</option>
+                    <option> Suomi</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="container">
+            <p>©2020 - Advertex conpany. All right reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Скрипты -->
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/jcf.min.js"></script>
+<script src="js/jcf.select.min.js"></script>
+<script src="js/jquery.responsiveTabs.min.js"></script>
+<script src="js/Finance_Withdraw.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+.wrapper{
+  .section_1{
+    background: url("../img/sup_bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    .container{
+      .content{
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 5px 20px 5px;
+        h3{
+          color: #324047;
+          font-size: 18px;
+          font-weight: 500;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          text-align: left;
+        }
+        .box_container{
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          margin: 23px 0 0 0;
+          .box{
+            width: 280px;
+            margin: 0 auto 23px;
+            padding: 20px 20px 40px 10px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 5px 30px rgba(50,64,71,.05);
+            h4{
+              color: #3a3b3e;
+              font-size: 20px;
+              font-weight: 700;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: 60px;
+              text-align: left;
+            }
+            p{
+              color: #899ba4;
+              font-size: 14px;
+              font-weight: 400;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              text-align: left;
+              padding: 6px 0px 17px 0;
+              overflow: hidden;
+            }
+            .linc{
+              display: flex;
+              justify-content: space-between;
+              width: 51%;
+              a{
+                position: relative;
+                padding: 0 0 0 19px;
+                cursor: pointer;
+                transition: 0.3s;
+                border-bottom: 1px solid #ffffff;
+                &.copy{
+                  color: #00cece;
+                  font-size: 14px;
+                  font-weight: 400;
+                  font-style: normal;
+                  letter-spacing: normal;
+                  line-height: normal;
+                  text-align: left;
+                  &:hover{
+                    border-bottom: 1px solid #00cece;
+                  }
+                  i{
+                    &:before{
+                      color: #00cece;
+                    }
+                  }
+                }
+                &.preview{
+                  color: #324047;
+                  font-size: 14px;
+                  font-weight: 400;
+                  font-style: normal;
+                  letter-spacing: normal;
+                  line-height: normal;
+                  text-align: left;
+                  &:hover{
+                    border-bottom: 1px solid #324047;
+                  }
+                  i{
+                    &:before{
+                      color: #324047;
+                    }
+                  }
+                }
+                i{
+                  position: absolute;
+                  left: 0;
+                  top: -7px;
+                  &:before{
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width:1280px){
+  .wrapper{
+    .section_1{
+      padding: 0 0 262px 0;
+      .container{
+        .content{
+          width: 92%;
+          margin: 0 auto;
+          padding: 38px 5px 30px 38px;
+          h3{
+            color: #324047;
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+          }
+          .box_container{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin: 23px 0 0 0;
+            .box{
+              width: 370px;
+              background-color: #fff;
+              box-shadow: 0 5px 30px rgba(50,64,71,.05);
+              padding: 20px 40px 40px 39px;
+              margin: 0 28px 23px 0;
+              h4{
+                color: #3a3b3e;
+                font-size: 20px;
+                font-weight: 700;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 60px;
+                text-align: left;
+              }
+              p{
+                color: #899ba4;
+                font-size: 14px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: left;
+                padding: 6px 0px 17px 0;
+              }
+              .linc{
+                display: flex;
+                justify-content: space-between;
+                width: 51%;
+                a{
+                  position: relative;
+                  padding: 0 0 0 19px;
+                  cursor: pointer;
+                  transition: 0.3s;
+                  &:hover{
+                    border-bottom: 1px solid transparent;
+                  }
+                  &.copy{
+                    color: #00cece;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    line-height: normal;
+                    text-align: left;
+                    i{
+                      &:before{
+                        color: #00cece;
+                      }
+                    }
+                  }
+                  &.preview{
+                    color: #324047;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    line-height: normal;
+                    text-align: left;
+                    i{
+                      &:before{
+                        color: #324047;
+                      }
+                    }
+                  }
+                  i{
+                    position: absolute;
+                    left: 0;
+                    top: -7px;
+                    &:before{
+                      font-size: 15px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

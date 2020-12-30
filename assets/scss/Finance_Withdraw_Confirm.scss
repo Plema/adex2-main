@@ -1,0 +1,127 @@
+.wrapper{
+
+  .section_1{
+    background: url("../img/sup_bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0 0 50px 0;
+    .container{
+      .content_bg{
+        padding: 20px 5px 20px 5px;
+        h4{
+          color: #324047;
+          font-size: 18px;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          text-align: center;
+        }
+        img{
+          display: block;
+          margin: 34px auto 50px;
+        }
+        .bottom_block{
+          overflow: hidden;
+          .name{
+            color: #324047;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: center;
+            position: relative;
+            display: table;
+            margin: 0 auto 40px;
+            padding: 10px 0 0 55px;
+            img{
+
+              position: absolute;
+              left: 0;
+              width: 40px;
+              height: 40px;
+              top: 0px;
+              margin: 0;
+
+            }
+          }
+          p{
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 32px;
+            text-align: center;
+            color: #899ba4;
+            strong{
+              color: #324047;
+              font-size: 16px;
+              font-weight: 400;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: 32px;
+              text-align: center;
+            }
+          }
+          .btn_block{
+            display: flex;
+            margin: 44px auto 0;
+            justify-content: center;
+            flex-wrap: wrap;
+            .btn{
+              min-width: 232px;
+              margin: 0 6px 5px 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width:1280px){
+  .wrapper{
+
+    .section_1{
+
+      .container{
+        .content_bg{
+          padding: 61px 41px 60px 42px;
+
+          img{
+
+            margin: 34px auto 100px;
+          }
+          .bottom_block{
+            .name{
+
+              margin: 0 auto 40px;
+              padding: 10px 0 0 55px;
+              img{
+
+
+              }
+            }
+            p{
+
+              strong{
+
+              }
+            }
+            .btn_block{
+
+              margin: 44px auto 0;
+
+              .btn{
+                min-width: 232px;
+                margin: 0 6px 0 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
