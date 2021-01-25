@@ -37,6 +37,7 @@
     "posthtml-include": "^1.4.3"
   },
   "dependencies": {
+    "chart.js": "^2.9.4",
     "imagemin-mozjpeg": "^8.0.0"
   }
 }
