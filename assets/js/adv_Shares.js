@@ -20,6 +20,75 @@ var gradient = ctx.createLinearGradient(0, 0, 0, 250);
 gradient.addColorStop(0, 'rgba(0,205,205,0.7)');   
 gradient.addColorStop(1, 'rgba(255,255,255,0)');
 
+var customTooltips = function(tooltip) {
+    // Tooltip Element
+    var tooltipEl = document.getElementById('chartjs-tooltip');
+
+    if (!tooltipEl) {
+        tooltipEl = document.createElement('div');
+        tooltipEl.id = 'chartjs-tooltip';
+        tooltipEl.innerHTML = "<table></table>"
+        document.body.appendChild(tooltipEl);
+    }
+
+    // Hide if no tooltip
+    if (tooltip.opacity === 0) {
+        tooltipEl.style.opacity = 0;
+        return;
+    }
+
+    // Set caret Position
+    tooltipEl.classList.remove('above', 'below', 'no-transform', 'top');
+    if (tooltip.yAlign) {
+        tooltipEl.classList.add(tooltip.yAlign);
+    } else {
+        tooltipEl.classList.add('no-transform');
+    }
+
+    function getBody(bodyItem) {
+        return bodyItem.lines;
+    }
+
+    // Set Text
+    if (tooltip.body) {
+        var titleLines = tooltip.title || [];
+        var bodyLines = tooltip.body.map(getBody);
+
+        var innerHtml = '<thead>';
+        bodyLines.forEach(function(body, i) {
+            var colors = tooltip.labelColors[i];
+            var style = 'background:' + colors.backgroundColor;
+            style += '; border-color:' + colors.borderColor;
+            style += '; border-width: 2px'; 
+            innerHtml += '<tr><th>' + parseFloat(body).toFixed(2) + "$" + '</th></tr>';
+        });
+        
+        innerHtml += '</thead><tbody>';
+
+        titleLines.forEach(function(title) {
+            innerHtml += '<tr><td>'  + title +'</td></tr>';
+        });
+        innerHtml += '</tbody>';
+
+        var tableRoot = tooltipEl.querySelector('table');
+        tableRoot.innerHTML = innerHtml;
+    }
+
+    var position = this._chart.canvas.getBoundingClientRect();
+
+    // Display, position, and set styles for font
+    tooltipEl.style.opacity = 1;
+    tooltipEl.style.left = position.left + tooltip.caretX + 'px';
+    tooltipEl.style.top = position.top + tooltip.caretY + 'px';
+    tooltipEl.style.fontFamily = tooltip._fontFamily;
+    tooltipEl.style.fontSize = tooltip.fontSize;
+    tooltipEl.style.fontStyle = tooltip._fontStyle;
+    tooltipEl.style.padding = tooltip.yPadding + 'px ' + tooltip.xPadding + 'px';
+    
+};
+
+
+
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -28,30 +97,51 @@ var myChart = new Chart(ctx, {
             borderColor: "#00cdcd",
             backgroundColor: gradient,
             pointBackgroundColor: "#00cdcd",
-            pointBorderWidth: "10",
-            pointBorderColor: 'rgba(0,205,205,0.3)',
+            pointHoverBorderColor: 'rgba(0,205,205,0.3)',
+            pointHoverBorderWidth: '10',
+            radius: 0,
             data: [1.25,1.89,3.47,2.85,4.00,4.20,5.62]
         }]
     },
     options: {
+        
         legend: {
             display: false,
+            labels: {
+                               
+            }
         },
         scales: {
             yAxes: [{
                 ticks: {
-                    // Include a dollar sign in the ticks
                     callback: function(value, index, values) {
-                        return '$' + value;
-                    }
+                        return '$ ' + value + '.00  ';
+                    },
+                    fontFamily: "'Roboto-Regular', 'sans-serif'",
+                    fontColor: '#ADC3CE',
+                    precision: 0,
                 }
             }],
             xAxes: [{
                 gridLines: {
                     color: "rgba(0, 0, 0, 0)",
+                },
+                ticks: {
+                    fontFamily: "'Roboto-Regular', 'sans-serif'",
+                    fontColor: '#ADC3CE'
+                    
                 }
             }]
         },
+        tooltips: {
+            enabled: false,
+            mode: 'index',
+            position: 'nearest',
+            custom: customTooltips
+        },
+        hover: {
+            intersect: false,
+        }
     }
 });
 

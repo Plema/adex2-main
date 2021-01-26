@@ -9,4 +9,7 @@ node_modules/
 *.pdf
 *.log
 
+*.DS_Store
+._*
+
 Thumbs.db
