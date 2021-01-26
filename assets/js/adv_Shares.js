@@ -16,12 +16,17 @@ $(document).ready(function(){
 // Charts
 var ctx = document.getElementById('chart-line').getContext('2d');
 
+var gradient = ctx.createLinearGradient(0, 0, 0, 250);
+gradient.addColorStop(0, 'rgba(0,205,205,0.7)');   
+gradient.addColorStop(1, 'rgba(255,255,255,0)');
+
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
         labels: ["1 Aug","2 Aug","3 Aug","4 Aug","5 Aug","6 Aug","7 Aug"],
         datasets: [{
-            fill: 'rgba(0, 205, 205, 1)',
+            borderColor: "#00cdcd",
+            backgroundColor: gradient,
             data: [1.25,1.89,3.47,2.85,4.00,4.20,5.62]
         }]
     },
@@ -38,7 +43,7 @@ var myChart = new Chart(ctx, {
                     }
                 }
             }]
-        }
+        },
     }
 });
 
