@@ -27,6 +27,9 @@ var myChart = new Chart(ctx, {
         datasets: [{
             borderColor: "#00cdcd",
             backgroundColor: gradient,
+            pointBackgroundColor: "#00cdcd",
+            pointBorderWidth: "10",
+            pointBorderColor: 'rgba(0,205,205,0.3)',
             data: [1.25,1.89,3.47,2.85,4.00,4.20,5.62]
         }]
     },
@@ -41,6 +44,11 @@ var myChart = new Chart(ctx, {
                     callback: function(value, index, values) {
                         return '$' + value;
                     }
+                }
+            }],
+            xAxes: [{
+                gridLines: {
+                    color: "rgba(0, 0, 0, 0)",
                 }
             }]
         },
