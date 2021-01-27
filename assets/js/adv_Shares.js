@@ -14,7 +14,9 @@ $(document).ready(function(){
 //конец табы/**
 
 // Charts
-var ctx = document.getElementById('chart-line').getContext('2d');
+var ctx = document.getElementById('chart-week').getContext('2d');
+var ctx1 = document.getElementById('chart-month').getContext('2d');
+var ctx2 = document.getElementById('chart-alltime').getContext('2d');
 
 var gradient = ctx.createLinearGradient(0, 0, 0, 250);
 gradient.addColorStop(0, 'rgba(0,205,205,0.7)');   
@@ -89,7 +91,7 @@ var customTooltips = function(tooltip) {
 
 
 
-var myChart = new Chart(ctx, {
+var myChartWeek = new Chart(ctx, {
     type: 'line',
     data: {
         labels: ["1 Aug","2 Aug","3 Aug","4 Aug","5 Aug","6 Aug","7 Aug"],
@@ -131,6 +133,121 @@ var myChart = new Chart(ctx, {
                     fontColor: '#ADC3CE'
                     
                 }
+            }]
+        },
+        tooltips: {
+            enabled: false,
+            mode: 'index',
+            position: 'nearest',
+            custom: customTooltips
+        },
+        hover: {
+            intersect: false,
+        }
+    }
+});
+var myChartMonth = new Chart(ctx1, {
+    type: 'line',
+    data: {
+        labels: ["1 Aug","2 Aug","3 Aug","4 Aug","5 Aug","6 Aug","7 Aug","8 Aug","9 Aug","10 Aug","11 Aug","12 Aug","13 Aug","14 Aug",
+                "15 Aug","16 Aug","17 Aug","18 Aug","19 Aug","20 Aug","21 Aug","22 Aug","23 Aug","24 Aug","25 Aug","26 Aug","27 Aug","28 Aug","29 Aug","30 Aug"],
+        datasets: [{
+            borderColor: "#00cdcd",
+            backgroundColor: gradient,
+            pointBackgroundColor: "#00cdcd",
+            pointHoverBorderColor: 'rgba(0,205,205,0.3)',
+            pointHoverBorderWidth: '10',
+            radius: 0,
+            data: [1.25,1.89,3.47,2.85,4.00,4.20,5.62,1.25,1.89,3.47,2.85,4.00,4.20,5.62,1.25,1.89,3.47,2.85,4.00,4.20,5.62,1.25,1.89,3.47,2.85,4.00,4.20,5.62,4.00,4.20]
+        }]
+    },
+    options: {
+        
+        legend: {
+            display: false,
+            labels: {
+                               
+            }
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    callback: function(value, index, values) {
+                        return '$ ' + value + '.00  ';
+                    },
+                    fontFamily: "'Roboto-Regular', 'sans-serif'",
+                    fontColor: '#ADC3CE',
+                    precision: 0,
+                }
+            }],
+            xAxes: [{
+                gridLines: {
+                    color: "rgba(0, 0, 0, 0)",
+                },
+                ticks: {
+                    fontFamily: "'Roboto-Regular', 'sans-serif'",
+                    fontColor: '#ADC3CE',
+                    autoSkip: true
+                },
+                beginAtZero: true
+            }]
+        },
+        tooltips: {
+            enabled: false,
+            mode: 'index',
+            position: 'nearest',
+            custom: customTooltips
+        },
+        hover: {
+            intersect: false,
+        }
+    }
+});
+
+var myChartAllTime = new Chart(ctx2, {
+    type: 'line',
+    data: {
+        labels: ["1 Aug","2 Aug","3 Aug","4 Aug","5 Aug","6 Aug","7 Aug","8 Aug","9 Aug","10 Aug","11 Aug","12 Aug","13 Aug","14 Aug",
+                "15 Aug","16 Aug","17 Aug","18 Aug","19 Aug","20 Aug","21 Aug","22 Aug","23 Aug","24 Aug","25 Aug","26 Aug","27 Aug","28 Aug","29 Aug","30 Aug"],
+        datasets: [{
+            borderColor: "#00cdcd",
+            backgroundColor: gradient,
+            pointBackgroundColor: "#00cdcd",
+            pointHoverBorderColor: 'rgba(0,205,205,0.3)',
+            pointHoverBorderWidth: '10',
+            radius: 0,
+            data: [1.25,1.89,3.47,2.85,4.00,4.20,5.62,1.25,1.89,3.47,2.85,4.00,4.20,5.62,1.25,1.89,3.47,2.85,4.00,4.20,5.62,1.25,1.89,3.47,2.85,4.00,4.20,5.62,4.00,4.20]
+        }]
+    },
+    options: {
+        
+        legend: {
+            display: false,
+            labels: {
+                               
+            }
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    callback: function(value, index, values) {
+                        return '$ ' + value + '.00  ';
+                    },
+                    fontFamily: "'Roboto-Regular', 'sans-serif'",
+                    fontColor: '#ADC3CE',
+                    precision: 0,
+                }
+            }],
+            xAxes: [{
+                gridLines: {
+                    color: "rgba(0, 0, 0, 0)",
+                },
+                ticks: {
+                    fontFamily: "'Roboto-Regular', 'sans-serif'",
+                    fontColor: '#ADC3CE',
+                    autoSkip: true,
+                },
+                beginAtZero: true,
             }]
         },
         tooltips: {
